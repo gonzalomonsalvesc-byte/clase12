@@ -30,3 +30,14 @@ th, td { padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--color-border); t
 th { text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.8rem; font-weight: 600; }
 tr:hover { background: rgba(255,255,255,0.5); }
 svg.grafico, canvas { display: block; width: 100%; max-width: 100%; height: auto; margin: 1.5rem 0; }
+object {
+    display: block;
+    width: 130%; /* Lo hacemos más ancho que el contenedor */
+    max-width: 1100px; /* Pero con un límite para que no se deforme */
+    margin: 2rem auto; /* Lo centramos */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    /* ESTO ES CLAVE: mueve el gráfico hacia la izquierda */
+    margin-left: -15%; 
+}
